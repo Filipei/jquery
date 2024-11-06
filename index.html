@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Jquery</title>
+    
+
+    <script>
+        $(document).ready(function(){
+            $('.question').click(function(){
+               $(this).next('p').slideToggle(500)
+               $(this).find('.fas').toggleClass('rotation')
+        
+            })        
+        })
+        </script>
+</head>
+<body>
+    <header>
+        <h2>Perguntas Frequentes</h2>
+    </header>
+    <div class="container">
+        <div class="img">
+            <img src="./imagens usadas/OIP-removebg-preview.png" alt="" width="250px">
+        </div>
+        <div class="text">
+            <div class="card1">
+                <h1 class="question">Como redefinir minha senha?<i class="fas fa-arrow-right"></i></h1>
+                <p>Para redefinir sua senha, acesse a página de login do serviço desejado e clique na opção "Esqueci minha senha" ou similar. Em seguida, insira seu e-mail ou nome de usuário associado à conta. Você receberá um e-mail com um link de redefinição. Clique no link e siga as instruções para criar uma nova senha. Após isso, você poderá fazer login com sua nova senha.</p>
+            </div>
+            <div class="card1">
+                <h1 class="question">Quais são os metodos de pagamento aceitos?<i class="fas fa-arrow-right"></i></h1>
+                <p>Os métodos de pagamento aceitos geralmente incluem cartões de crédito e débito, como Visa, Mastercard e American Express, além de opções como PayPal, transferências bancárias e, em alguns casos, pagamentos via boleto. Algumas plataformas também aceitam carteiras digitais e pagamentos em criptomoedas. Verifique sempre a seção de pagamento do site ou serviço específico para detalhes precisos.</p>
+            </div>
+            <div class="card1">
+                <h1 class="question">Qual a politica de reembolso?<i class="fas fa-arrow-right"></i></h1>
+                <p>
+                    Para entrar em contato com o suporte, você pode visitar a seção de atendimento ao cliente no site, onde geralmente estão disponíveis opções como chat ao vivo, e-mail ou número de telefone. Muitas empresas também oferecem suporte por meio de redes sociais. Verifique os horários de atendimento para garantir uma resposta rápida.</p>
+            </div>
+            <div class="card1">
+                <h1 class="question">Como entro em contato com o suporte?<i class="fas fa-arrow-right"></i></h1>
+                <p>Para entrar em contato com o suporte, você pode visitar a seção de atendimento ao cliente no site da empresa. Geralmente, são oferecidas opções como chat ao vivo, e-mail e telefone. Algumas empresas também têm suporte nas redes sociais. Certifique-se de verificar os horários de atendimento para obter uma resposta mais rápida.
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
